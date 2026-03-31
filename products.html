@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GameVault | Store</title>
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+
+<header>
+    <h1>GameVault</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Store</a>
+    </nav>
+</header>
+
+<section class="prod">
+    <h2>Game Store</h2>
+
+    <!-- 🔍 Search Bar -->
+    <input type="text" id="searchInput" placeholder="Search games...">
+
+    <!-- Categories -->
+    <div class="categories">
+        <button class="cat-btn active" data-category="All">All</button>
+        <button class="cat-btn" data-category="Action">Action</button>
+        <button class="cat-btn" data-category="RPG">RPG</button>
+        <button class="cat-btn" data-category="Adventure">Adventure</button>
+        <button class="cat-btn" data-category="Open World">Open World</button>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="grid" id="gameGrid"></div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

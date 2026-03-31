@@ -1,0 +1,163 @@
+:root {
+    --bg: #0b1220;
+    --card: #121a2b;
+    --accent: #4ade80;
+    --text: #e5e7eb;
+    --muted: #9ca3af;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 3rem;
+    background: #0f172a;
+    border-bottom: 1px solid #1e293b;
+}
+
+header h1 {
+    color: var(--accent);
+    font-size: 1.5rem;
+}
+
+nav a {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: var(--text);
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+/* MAIN SECTION */
+.prod {
+    padding: 3rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.prod h2 {
+    margin-bottom: 1.5rem;
+}
+
+/* SEARCH BAR */
+#searchInput {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    background: #1e293b;
+    color: white;
+}
+
+/* CATEGORIES */
+.categories {
+    margin-bottom: 2rem;
+}
+
+.cat-btn {
+    margin-right: 10px;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    border: 1px solid var(--accent);
+    background: transparent;
+    color: var(--accent);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cat-btn:hover,
+.cat-btn.active {
+    background: var(--accent);
+    color: #022c22;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+/* CARD */
+.card {
+    background: var(--card);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* IMAGE */
+.card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+/* CARD BODY */
+.card-body {
+    padding: 1rem;
+}
+
+.card-body h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    color: var(--accent);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* BUTTON */
+.card-body button {
+    width: 100%;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 6px;
+    background: var(--accent);
+    color: #022c22;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-body button:hover {
+    opacity: 0.85;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .prod {
+        padding: 2rem 1rem;
+    }
+
+    header {
+        padding: 1rem;
+    }
+}
